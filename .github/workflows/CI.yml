@@ -49,7 +49,7 @@ jobs:
 
       - name: Get SSH Key
         run: |
-          touch ~/.ssh/id_rsa
+          mkdir ~/.ssh
           printf %s "$DEPLOYMENT_KEY" > ~/.ssh/id_rsa
         shell: bash
         env:
