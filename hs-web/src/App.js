@@ -79,7 +79,7 @@ export default function App() {
                     <Card>
                         <Typography variant="h4" gutterBottom>
                             <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}} src={"icon1024.png"}
-                                 width={64}/> DEMO
+                                 width={64}/> HyperSynesthesia
                         </Typography>
                         <Typography variant="h5" component="h2" gutterBottom>
                             Application for creating videos in response to audio
