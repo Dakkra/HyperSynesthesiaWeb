@@ -77,7 +77,7 @@ export default function App() {
                 <CssBaseline/>
                 <Container component="main" sx={{mb: 2}} maxWidth="md">
                     <Card>
-                        <Typography variant="h2" component="h1" gutterBottom>
+                        <Typography variant="h4" gutterBottom>
                             HyperSynesthesia
                         </Typography>
                         <Typography variant="h5" component="h2" gutterBottom>
@@ -90,28 +90,27 @@ export default function App() {
                             HyperSynthesia is an <Link href={"https://github.com/Dakkra/HyperSynesthesia"}
                                                        target={"_blank"}>open source
                             application</Link> created to be the spiritual successor to <Link
-                            href={"https://soniccandle.sourceforge.net/"} target={"_blank"}>Sonic Candle</Link>. The
-                            goal is
-                            to:
+                            href={"https://soniccandle.sourceforge.net/"} target={"_blank"}>Sonic Candle</Link>.
+                            <br/>
+                            The goal is to:
                             <ul>
-                                <li> allow a user to
-                                    use any audio input file (via <Link href={"https://ffmpeg.org/"}
-                                                                        target={"_blank"}>FFMPEG</Link>)
+                                <li> Allow a user to use any audio input file (via <Link href={"https://ffmpeg.org/"}
+                                                                                         target={"_blank"}>FFMPEG</Link>)
                                 </li>
                                 <li>
-                                    generate frame data from audio input
+                                    Generate frame data from audio input
                                 </li>
                                 <li>
-                                    analyze frame data to generate FFT, oscilloscope, and other audio visualization data
+                                    Analyze frame data to generate FFT, oscilloscope, and other audio visualization data
                                 </li>
                                 <li>
-                                    render using <Link href={"https://openjfx.io/"}
+                                    Render using <Link href={"https://openjfx.io/"}
                                                        target={"_blank"}>JavaFX</Link> (chosen
                                     for web views to allow CSS styling of
                                     components)
                                 </li>
                                 <li>
-                                    encode video using FFMPEG again
+                                    Encode video using FFMPEG again
                                 </li>
                             </ul>
                             With these goals in mind, the project is using Xenon as an application framework to enable
@@ -120,7 +119,7 @@ export default function App() {
                         </Typography>
                     </Card>
                     <Card>
-                        If you wish to join or watch the progress on this project, feel free to:
+                        If you wish to join or watch the progress on this project feel free to:
                         <ul>
                             <li>
                                 Join the <Link href={"https://discord.gg/MANggMn2aR"} target={"_blank"}>Discord</Link>
@@ -154,7 +153,7 @@ export default function App() {
                                                                           target={"_blank"}>Dakkra</Link>)
                             </Typography>
                             <br/>
-                            <Button onClick={() => toggleTheme()}>Toggle Light/Dark Mode</Button>
+                            <Button size={"small"} onClick={() => toggleTheme()}>Toggle Light/Dark Mode</Button>
                         </Box>
                     </Container>
                 </Box>
