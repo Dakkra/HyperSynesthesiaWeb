@@ -47,7 +47,13 @@ jobs:
       - name: Build Application
         run: cd hs-web && npm ci && npm run build --if-present
 
+      - name: Get SSH Key
+        run: printf %s "$DEPLOYMENT_KEY" > ~/.ssh/id_rsa
+        shell: bash
+        env:
+          DEPLOYMENT_KEY: ${{ secrets.SSH_KEY }}
+
+      - run: chmod 600 ~/.ssh/id_rsa
+
       - name: Deploy application
-        run: |
-          cat >> _EOF_ ${{secrets.SSH_KEY}} > .ssh/id_rsa
-          cd hs-web && scp -r build/* ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}}:/var/www/html
+        run: cd hs-web && scp -r build/* ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}}:/var/www/html
