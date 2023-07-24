@@ -94,26 +94,28 @@ export default function App() {
                             href={"https://soniccandle.sourceforge.net/"} target={"_blank"}>Sonic Candle</Link>.
                             <br/>
                             The goal is to:
-                            <ul>
-                                <li> Allow a user to use any audio input file (via <Link href={"https://ffmpeg.org/"}
-                                                                                         target={"_blank"}>FFMPEG</Link>)
-                                </li>
-                                <li>
-                                    Generate frame data from audio input
-                                </li>
-                                <li>
-                                    Analyze frame data to generate FFT, oscilloscope, and other audio visualization data
-                                </li>
-                                <li>
-                                    Render using <Link href={"https://openjfx.io/"}
-                                                       target={"_blank"}>JavaFX</Link> (chosen
-                                    for web views to allow CSS styling of
-                                    components)
-                                </li>
-                                <li>
-                                    Encode video using FFMPEG again
-                                </li>
-                            </ul>
+                        </Typography>
+                        <ul>
+                            <li> Allow a user to use any audio input file (via <Link href={"https://ffmpeg.org/"}
+                                                                                     target={"_blank"}>FFMPEG</Link>)
+                            </li>
+                            <li>
+                                Generate frame data from audio input
+                            </li>
+                            <li>
+                                Analyze frame data to generate FFT, oscilloscope, and other audio visualization data
+                            </li>
+                            <li>
+                                Render using <Link href={"https://openjfx.io/"}
+                                                   target={"_blank"}>JavaFX</Link> (chosen
+                                for web views to allow CSS styling of
+                                components)
+                            </li>
+                            <li>
+                                Encode video using FFMPEG again
+                            </li>
+                        </ul>
+                        <Typography variant="body1">
                             With these goals in mind, the project is using Xenon as an application framework to enable
                             quality of life features such as auto-updates, threading, UI workflows, and more.
                             <br/>
