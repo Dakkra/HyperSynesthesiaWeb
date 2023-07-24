@@ -87,8 +87,8 @@ export default function App() {
                     </Card>
                     <Card>
                         <Typography variant="body1">
-                            HyperSynthesia is an <Link href={"https://github.com/Dakkra/HyperSynesthesia"}
-                                                       target={"_blank"}>open source
+                            HyperSynesthesia is an <Link href={"https://github.com/Dakkra/HyperSynesthesia"}
+                                                         target={"_blank"}>open source
                             application</Link> created to be the spiritual successor to <Link
                             href={"https://soniccandle.sourceforge.net/"} target={"_blank"}>Sonic Candle</Link>.
                             <br/>
