@@ -153,7 +153,9 @@ export default function App() {
                                                                           target={"_blank"}>Dakkra</Link>)
                             </Typography>
                             <br/>
-                            <Button size={"small"} onClick={() => toggleTheme()}>Toggle Light/Dark Mode</Button>
+                            <Button size={"small"}
+                                    onClick={() => toggleTheme()}>Switch
+                                to {JSON.parse(isDark) ? "Light" : "Dark"}</Button>
                         </Box>
                     </Container>
                 </Box>
