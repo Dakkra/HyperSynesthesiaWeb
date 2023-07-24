@@ -49,6 +49,5 @@ jobs:
 
       - name: Deploy application
         run: |
-          echo ${{secrets.SSH_KEY}} > ssh_key
-          ssh-add ./ssh_key
+          echo ${{secrets.SSH_KEY}} > .ssh/id_rsa
           cd hs-web && scp -r build/* ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}}:/var/www/html
