@@ -42,7 +42,7 @@ export const darkThemeOptions = {
     palette: {
         mode: 'dark',
         primary: {
-            main: '#83bb67',
+            main: '#6bee63',
         },
         secondary: {
             main: '#f50057',
@@ -78,7 +78,8 @@ export default function App() {
                 <Container component="main" sx={{mb: 2}} maxWidth="md">
                     <Card>
                         <Typography variant="h4" gutterBottom>
-                            HyperSynesthesia
+                            <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}} src={"icon1024.png"}
+                                 width={64}/> HyperSynesthesia
                         </Typography>
                         <Typography variant="h5" component="h2" gutterBottom>
                             <Link href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> plugin /
