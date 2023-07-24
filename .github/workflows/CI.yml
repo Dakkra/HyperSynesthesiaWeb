@@ -51,9 +51,11 @@ jobs:
         run: |
           mkdir ~/.ssh
           printf %s "$DEPLOYMENT_KEY" > ~/.ssh/id_rsa
+          printf %s "$KNOWN_HOSTS" > ~/.ssh/known_hosts
         shell: bash
         env:
           DEPLOYMENT_KEY: ${{ secrets.SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
 
       - run: chmod 600 ~/.ssh/id_rsa
 
