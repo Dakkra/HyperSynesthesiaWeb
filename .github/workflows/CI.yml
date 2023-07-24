@@ -47,6 +47,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: hs-build
+          path: build/
 
       - name: Get SSH Key
         run: |
