@@ -115,8 +115,8 @@ export default function App() {
                             </li>
                         </ul>
                         <Typography variant="body1">
-                            With these goals in mind, the project is using
-                            <Link href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> as an
+                            With these goals in mind, the project is using <Link
+                            href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> as an
                             application framework to enable
                             quality of life features such as auto-updates, threading, UI workflows, and more.
                             <br/>
