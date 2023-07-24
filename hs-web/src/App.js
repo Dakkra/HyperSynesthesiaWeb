@@ -82,8 +82,7 @@ export default function App() {
                                  width={64}/> HyperSynesthesia
                         </Typography>
                         <Typography variant="h5" component="h2" gutterBottom>
-                            <Link href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> plugin /
-                            application for creating videos in response to audio
+                            Application for creating videos in response to audio
                         </Typography>
                     </Card>
                     <Card>
@@ -116,7 +115,9 @@ export default function App() {
                             </li>
                         </ul>
                         <Typography variant="body1">
-                            With these goals in mind, the project is using Xenon as an application framework to enable
+                            With these goals in mind, the project is using
+                            <Link href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> as an
+                            application framework to enable
                             quality of life features such as auto-updates, threading, UI workflows, and more.
                             <br/>
                         </Typography>
