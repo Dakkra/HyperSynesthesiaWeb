@@ -51,4 +51,4 @@ jobs:
         run: |
           echo ${{secrets.SSH_KEY}} > ssh_key
           ssh-add ./ssh_key
-          cd hs-web && scp -r build/* ${{secrets.SSH_USERNAME}@${{secrets.SSH_HOST}}}:/var/www/html
+          cd hs-web && scp -r build/* ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}}:/var/www/html
