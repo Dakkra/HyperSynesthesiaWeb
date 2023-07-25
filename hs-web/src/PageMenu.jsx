@@ -1,6 +1,6 @@
 import {BrowserView, MobileView} from "react-device-detect";
 import {PAGES, useSelectedPageStore} from "./hooks/SelectedPage.state";
-import {Button, Dialog, Fab, List, ListItem} from "@mui/material";
+import {Button, Dialog, Divider, Fab, List, ListItem} from "@mui/material";
 import * as React from "react";
 import {useState} from "react";
 import {Navigation} from "@mui/icons-material";
@@ -12,6 +12,7 @@ export default function PageMenu() {
     return (
         <>
             <BrowserView>
+                <Divider/>
                 <Button onClick={() => setCurrentPage(PAGES.HOME_PAGE)}>Home</Button>
                 <Button onClick={() => setCurrentPage(PAGES.DOWNLOADS_PAGE)}>Downloads</Button>
                 <Button onClick={() => setCurrentPage(PAGES.SCREENSHOTS_PAGE)}>Screenshots</Button>

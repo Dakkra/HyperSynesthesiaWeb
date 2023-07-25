@@ -1,10 +1,9 @@
 import * as React from 'react';
 import {useState} from 'react';
-import {Box, Card, Container, createTheme, CssBaseline, Divider, ThemeProvider, Typography} from "@mui/material";
+import {Box, Card, Container, createTheme, CssBaseline, ThemeProvider, Typography} from "@mui/material";
 import PageFooter from "./PageFooter";
 import PageRender from "./PageRender";
 import PageMenu from "./PageMenu";
-import {BrowserView} from "react-device-detect";
 
 export const componentOverrides = {
     components: {
@@ -95,9 +94,6 @@ export default function App() {
                         <Typography variant="h5" component="h2" gutterBottom>
                             Application for creating videos in response to audio
                         </Typography>
-                        <BrowserView>
-                            <Divider/>
-                        </BrowserView>
                         <PageMenu></PageMenu>
                     </Card>
                     <PageRender></PageRender>
