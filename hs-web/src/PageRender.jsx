@@ -13,5 +13,7 @@ export default function PageRender() {
             return (<DownloadsPage></DownloadsPage>)
         case PAGES.SCREENSHOTS_PAGE:
             return (<ScreenshotsPage></ScreenshotsPage>)
+        default:
+            return (<></>)
     }
 }
