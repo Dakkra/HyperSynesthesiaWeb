@@ -1,4 +1,4 @@
-import {Button, Card, Divider, Link, Typography} from "@mui/material";
+import {Button, Card, Divider, Typography} from "@mui/material";
 import * as React from "react";
 
 export default function DownloadsPage() {
@@ -8,17 +8,29 @@ export default function DownloadsPage() {
                 <Typography variant={"h4"}>Downloads</Typography>
                 <Divider></Divider>
                 <Typography variant={"h6"}>Latest Build Artifacts</Typography>
-                <Button disabled>Application</Button> -- NOT AVAILABLE
+                APPLICATION:
+                <Button disabled>Artifact</Button>
+                <Button color={"secondary"} disabled>Source</Button>
+                <Button disabled>Build History</Button>
                 <Divider></Divider>
-                <Button disabled>Plugin (Mod)</Button>
-                -- <Link href={"https://github.com/Dakkra/HyperSynesthesia/actions?query=branch%3Amain+is%3Asuccess"}>
-                Build History</Link>
+                PLUGIN:
+                <Button disabled>Artifact</Button>
+                <Button color={"secondary"} href={"https://github.com/Dakkra/HyperSynesthesia"}
+                        target={"_blank"}>Source</Button>
+                <Button href={"https://github.com/Dakkra/HyperSynesthesia/actions?query=branch%3Amain+is%3Asuccess"}
+                        target={"_blank"}>
+                    Build History</Button>
                 <Divider></Divider>
+                WEB:
                 <Button
-                    href={"https://nightly.link/Dakkra/HyperSynesthesiaWeb/workflows/CI/main/hs-build.zip"}>Website</Button>
-                -- <Link
-                href={"https://github.com/Dakkra/HyperSynesthesiaWeb/actions?query=event%3Apush+is%3Asuccess+branch%3Amain"}>Build
-                History</Link>
+                    href={"https://nightly.link/Dakkra/HyperSynesthesiaWeb/workflows/CI/main/hs-build.zip"}
+                    target={"_blank"}>Artifact</Button>
+                <Button color={"secondary"} href={"https://github.com/Dakkra/HyperSynesthesiaWeb"}
+                        target={"_blank"}>Source</Button>
+                <Button
+                    href={"https://github.com/Dakkra/HyperSynesthesiaWeb/actions?query=event%3Apush+is%3Asuccess+branch%3Amain"}
+                    target={"_blank"}>Build
+                    History</Button>
             </Card>
         </>
     )
