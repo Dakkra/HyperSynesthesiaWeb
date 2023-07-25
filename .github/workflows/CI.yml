@@ -5,6 +5,11 @@ on:
     branches: [ main ]
   pull_request:
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   build:
 
@@ -23,11 +28,19 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript
+
       - name: Build Application
         run: cd hs-web && npm ci && npm run build --if-present
 
       - name: Run Tests
         run: cd hs-web && npm test
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
 
       - name: Upload Artifact
         if: github.ref == 'refs/heads/main'
