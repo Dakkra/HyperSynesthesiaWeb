@@ -4,6 +4,7 @@ import {Box, Card, Container, createTheme, CssBaseline, ThemeProvider, Typograph
 import PageFooter from "./PageFooter";
 import PageRender from "./PageRender";
 import PageMenu from "./PageMenu";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
 export const componentOverrides = {
     components: {
@@ -66,7 +67,7 @@ const lightTheme = createTheme(lightThemeOptions);
 const local_storage_theme_key = "ls_theme";
 
 export default function App() {
-
+    const queryClient = new QueryClient();
     const [isDark, setIsDark] = useState(localStorage.getItem(local_storage_theme_key));
 
     function toggleTheme() {
@@ -76,30 +77,33 @@ export default function App() {
     }
 
     return (
-        <ThemeProvider theme={JSON.parse(isDark) ? darkTheme : lightTheme}>
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    minHeight: '100vh',
-                }}
-            >
-                <CssBaseline/>
-                <Container component="main" sx={{mb: 2}} maxWidth="md">
-                    <Card>
-                        <Typography variant="h4" gutterBottom>
-                            <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}} src={"icon1024.png"}
-                                 width={64}/> HyperSynesthesia
-                        </Typography>
-                        <Typography variant="h5" component="h2" gutterBottom>
-                            Application for creating videos in response to audio
-                        </Typography>
-                        <PageMenu></PageMenu>
-                    </Card>
-                    <PageRender></PageRender>
-                </Container>
-                <PageFooter isDark={isDark} toggleTheme={toggleTheme}></PageFooter>
-            </Box>
-        </ThemeProvider>
+        <QueryClientProvider client={queryClient}>
+            <ThemeProvider theme={JSON.parse(isDark) ? darkTheme : lightTheme}>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        minHeight: '100vh',
+                    }}
+                >
+                    <CssBaseline/>
+                    <Container component="main" sx={{mb: 2}} maxWidth="md">
+                        <Card>
+                            <Typography variant="h4" gutterBottom>
+                                <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}}
+                                     src={"icon1024.png"}
+                                     width={64}/> HyperSynesthesia
+                            </Typography>
+                            <Typography variant="h5" component="h2" gutterBottom>
+                                Application for creating videos in response to audio
+                            </Typography>
+                            <PageMenu></PageMenu>
+                        </Card>
+                        <PageRender></PageRender>
+                    </Container>
+                    <PageFooter isDark={isDark} toggleTheme={toggleTheme}></PageFooter>
+                </Box>
+            </ThemeProvider>
+        </QueryClientProvider>
     );
 }
