@@ -14,7 +14,9 @@ export default function DownloadsPage() {
                 <Button disabled>Build History</Button>
                 <Divider></Divider>
                 PLUGIN:
-                <Button disabled>Artifact</Button>
+                <Button
+                    href={"https://nightly.link/Dakkra/HyperSynesthesia/workflows/ci/main/hypersynesthesia-plugin.jar.zip"}
+                    target={"_blank"}>Artifact</Button>
                 <Button color={"secondary"} href={"https://github.com/Dakkra/HyperSynesthesia"}
                         target={"_blank"}>Source</Button>
                 <Button href={"https://github.com/Dakkra/HyperSynesthesia/actions?query=branch%3Amain+is%3Asuccess"}
