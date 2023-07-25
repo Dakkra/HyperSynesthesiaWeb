@@ -22,11 +22,21 @@ export default function PageMenu() {
                 </Fab>
                 <Dialog open={dialogOpen} onClose={() => setDialogOpen(false)}>
                     <List>
-                        <ListItem><Button onClick={() => setCurrentPage(PAGES.HOME_PAGE)}>Home</Button></ListItem>
-                        <ListItem> <Button
-                            onClick={() => setCurrentPage(PAGES.DOWNLOADS_PAGE)}>Downloads</Button></ListItem>
-                        <ListItem><Button
-                            onClick={() => setCurrentPage(PAGES.SCREENSHOTS_PAGE)}>Screenshots</Button></ListItem>
+                        <ListItem><Button fullWidth
+                                          onClick={() => {
+                                              setCurrentPage(PAGES.HOME_PAGE);
+                                              setDialogOpen(false);
+                                          }}>Home</Button></ListItem>
+                        <ListItem> <Button fullWidth
+                                           onClick={() => {
+                                               setCurrentPage(PAGES.DOWNLOADS_PAGE);
+                                               setDialogOpen(false);
+                                           }}>Downloads</Button></ListItem>
+                        <ListItem><Button fullWidth
+                                          onClick={() => {
+                                              setCurrentPage(PAGES.SCREENSHOTS_PAGE);
+                                              setDialogOpen(false);
+                                          }}>Screenshots</Button></ListItem>
                     </List>
                 </Dialog>
             </MobileView>
