@@ -12,7 +12,8 @@ export default function LegalPage() {
                 <Typography variant={"body1"}>Logo design by ZephyrasLied</Typography>
                 <Typography variant={"h4"}>Technologies and Dependencies</Typography>
                 <Divider></Divider>
-                <Typography variant={"body1"}>HyperSynesthesia uses: </Typography>
+
+                <Typography variant={"body1"}>HyperSynesthesia application and plugin use: </Typography>
                 <ul>
                     <li><Typography variant={"body1"}><Link href={"https://adoptium.net/"}
                                                             target={"_blank"}>Java</Link> as the runtime
@@ -28,6 +29,26 @@ export default function LegalPage() {
                                                             target={"_blank"}>Xenon</Link> as the
                         application
                         framework</Typography></li>
+                </ul>
+
+                <Divider></Divider>
+                <Typography variant={"body1"}>HyperSynesthesia website uses: </Typography>
+                <ul>
+                    <li><Typography variant={"body1"}><Link href={"https://reactjs.org/"}
+                                                            target={"_blank"}>React</Link> as the frontend
+                        framework</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://mui.com/"} target={"_blank"}>Material
+                        UI</Link> as the UI library</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://tanstack.com/query/latest"}
+                                                            target={"_blank"}>Tanstack Query</Link> as the
+                        networking/query library</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://www.npmjs.com/package/react-device-detect"}
+                                                            target={"_blank"}>React Device Detect</Link> to determine
+                        between mobile and desktop</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://github.com/pmndrs/zustand"}
+                                                            target={"_blank"}>Zustand</Link> for shared state management</Typography>
+                    </li>
+
                 </ul>
             </Card>
         </>

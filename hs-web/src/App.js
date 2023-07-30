@@ -43,7 +43,7 @@ export const lightThemeOptions = {
             main: '#a26c40',
         },
         secondary: {
-            main: '#f50057',
+            main: '#7c56c2',
         },
     },
 };
@@ -53,10 +53,10 @@ export const darkThemeOptions = {
     palette: {
         mode: 'dark',
         primary: {
-            main: '#ee63d2',
+            main: '#c179f6',
         },
         secondary: {
-            main: '#f50057',
+            main: '#f58300',
         },
     },
 };
