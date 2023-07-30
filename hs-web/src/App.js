@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useState} from 'react';
-import {Box, Card, Container, createTheme, CssBaseline, ThemeProvider, Typography} from "@mui/material";
+import {Box, Card, Container, createTheme, CssBaseline, GlobalStyles, ThemeProvider, Typography} from "@mui/material";
 import PageFooter from "./PageFooter";
 import PageRender from "./PageRender";
 import PageMenu from "./PageMenu";
@@ -40,7 +40,7 @@ export const lightThemeOptions = {
     palette: {
         mode: 'light',
         primary: {
-            main: '#8640a2',
+            main: '#a26c40',
         },
         secondary: {
             main: '#f50057',
@@ -87,6 +87,11 @@ export default function App() {
                     }}
                 >
                     <CssBaseline/>
+                    <GlobalStyles styles={{
+                        body: {
+                            background: JSON.parse(isDark) ? "radial-gradient(circle, #d7964a 0%, #482466 75%)" : "radial-gradient(circle, #482466 0%, #d7964a 75%)"
+                        }
+                    }}></GlobalStyles>
                     <Container component="main" sx={{mb: 2}} maxWidth="md">
                         <Card>
                             <Typography variant="h4" gutterBottom>
