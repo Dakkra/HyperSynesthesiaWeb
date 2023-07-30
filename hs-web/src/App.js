@@ -40,7 +40,7 @@ export const lightThemeOptions = {
     palette: {
         mode: 'light',
         primary: {
-            main: '#8061ea',
+            main: '#8640a2',
         },
         secondary: {
             main: '#f50057',
@@ -53,7 +53,7 @@ export const darkThemeOptions = {
     palette: {
         mode: 'dark',
         primary: {
-            main: '#6bee63',
+            main: '#ee63d2',
         },
         secondary: {
             main: '#f50057',
@@ -91,7 +91,7 @@ export default function App() {
                         <Card>
                             <Typography variant="h4" gutterBottom>
                                 <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}}
-                                     src={"icon1024.png"}
+                                     src={"logo-hyper-synesthesia-final.svg"}
                                      width={64}/> HyperSynesthesia
                             </Typography>
                             <Typography variant="h5" component="h2" gutterBottom>

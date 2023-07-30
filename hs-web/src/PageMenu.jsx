@@ -16,6 +16,7 @@ export default function PageMenu() {
                 <Button onClick={() => setCurrentPage(PAGES.HOME_PAGE)}>Home</Button>
                 <Button onClick={() => setCurrentPage(PAGES.DOWNLOADS_PAGE)}>Downloads</Button>
                 <Button onClick={() => setCurrentPage(PAGES.SCREENSHOTS_PAGE)}>Screenshots</Button>
+                <Button onClick={() => setCurrentPage(PAGES.LEGAL_PAGE)}>Legal</Button>
             </BrowserView>
             <MobileView>
                 <Fab color={"primary"} onClick={() => setDialogOpen(true)} sx={{bottom: 100, right: 8}}>
@@ -38,6 +39,11 @@ export default function PageMenu() {
                                               setCurrentPage(PAGES.SCREENSHOTS_PAGE);
                                               setDialogOpen(false);
                                           }}>Screenshots</Button></ListItem>
+                        <ListItem><Button fullWidth
+                                          onClick={() => {
+                                              setCurrentPage(PAGES.LEGAL_PAGE);
+                                              setDialogOpen(false);
+                                          }}>Legal</Button></ListItem>
                     </List>
                 </Dialog>
             </MobileView>

@@ -3,7 +3,8 @@ import {create} from "zustand";
 export const PAGES = {
     HOME_PAGE: "Home",
     DOWNLOADS_PAGE: "Downloads",
-    SCREENSHOTS_PAGE: "Screenshots"
+    SCREENSHOTS_PAGE: "Screenshots",
+    LEGAL_PAGE: "Legal"
 }
 
 export const useSelectedPageStore = create((set) => ({
