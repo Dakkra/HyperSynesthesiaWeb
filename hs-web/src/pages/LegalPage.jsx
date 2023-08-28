@@ -10,7 +10,7 @@ export default function LegalPage() {
                 <Typography variant={"body1"}>Website Copyright &copy; Christopher Soderquist</Typography>
                 <Typography variant={"body1"}>HyperSynesthesia is under GPLv3 License</Typography>
                 <Typography variant={"body1"}>Logo design by ZephyrasLied</Typography>
-                <Typography variant={"h4"}>Technologies and Dependencies</Typography>
+                <Typography variant={"h4"} sx={{mt: 4}}>Technologies and Dependencies</Typography>
                 <Divider></Divider>
 
                 <Typography variant={"body1"}>HyperSynesthesia application and plugin use: </Typography>
