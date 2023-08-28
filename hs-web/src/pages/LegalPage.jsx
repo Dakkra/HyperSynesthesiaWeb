@@ -40,6 +40,9 @@ export default function LegalPage() {
                     <li><Typography variant={"body1"}><Link href={"https://reactrouter.com/en/main"}
                                                             target={"_blank"}>React Router</Link> as the client side
                         router</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://github.com/aautio/react-modal-image"}
+                                                            target={"_blank"}>React Modal Image</Link> for image display</Typography>
+                    </li>
                     <li><Typography variant={"body1"}><Link href={"https://mui.com/"} target={"_blank"}>Material
                         UI</Link> as the UI library</Typography></li>
                     <li><Typography variant={"body1"}><Link href={"https://tanstack.com/query/latest"}
