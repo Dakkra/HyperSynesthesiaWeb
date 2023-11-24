@@ -5,6 +5,15 @@ import * as React from "react";
 import {useState} from "react";
 import {Navigation} from "@mui/icons-material";
 
+/**
+ * Displays the menu for navigating between different pages.
+ *
+ * This component provides buttons for navigating to the home page, downloads page,
+ * screenshots page, and legal page. It also provides a mobile-friendly menu for
+ * navigating between pages.
+ *
+ * @returns {JSX.Element} The rendered menu component.
+ */
 export default function PageMenu() {
     const [setCurrentPage] = useSelectedPageStore(state => [state.setCurrentPage]);
     const [dialogOpen, setDialogOpen] = useState(false);
