@@ -1,10 +1,21 @@
 import * as React from 'react';
 import {useState} from 'react';
-import {Box, Card, Container, createTheme, CssBaseline, GlobalStyles, ThemeProvider, Typography} from "@mui/material";
+import {
+    Box,
+    Button,
+    Card,
+    Container,
+    createTheme,
+    CssBaseline,
+    GlobalStyles,
+    ThemeProvider,
+    Typography
+} from "@mui/material";
 import PageFooter from "./PageFooter";
-import PageRender from "./PageRender";
 import PageMenu from "./PageMenu";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import MainRoutes from "./MainRoutes";
+import {Link as RouterLink} from "react-router-dom";
 
 export const componentOverrides = {
     components: {
@@ -95,16 +106,18 @@ export default function App() {
                     <Container component="main" sx={{mb: 2}} maxWidth="md">
                         <Card>
                             <Typography variant="h4" gutterBottom>
-                                <img alt={"HyperSynesthesia Logo"} style={{verticalAlign: "middle"}}
-                                     src={"logo-hyper-synesthesia-final.svg"}
-                                     width={64}/> HyperSynesthesia
+                                <Button component={RouterLink} to="/">
+                                    <img alt={"HyperSynesthesia Logo"}
+                                         style={{verticalAlign: "middle"}}
+                                         src={"logo-hyper-synesthesia-final.svg"}
+                                         width={64}/></Button> HyperSynesthesia
                             </Typography>
                             <Typography variant="h5" component="h2" gutterBottom>
                                 Application for creating videos in response to audio
                             </Typography>
                             <PageMenu></PageMenu>
                         </Card>
-                        <PageRender></PageRender>
+                        <MainRoutes></MainRoutes>
                     </Container>
                     <PageFooter isDark={isDark} toggleTheme={toggleTheme}></PageFooter>
                 </Box>

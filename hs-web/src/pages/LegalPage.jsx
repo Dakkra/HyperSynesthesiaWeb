@@ -10,7 +10,7 @@ export default function LegalPage() {
                 <Typography variant={"body1"}>Website Copyright &copy; Christopher Soderquist</Typography>
                 <Typography variant={"body1"}>HyperSynesthesia is under GPLv3 License</Typography>
                 <Typography variant={"body1"}>Logo design by ZephyrasLied</Typography>
-                <Typography variant={"h4"}>Technologies and Dependencies</Typography>
+                <Typography variant={"h4"} sx={{mt: 4}}>Technologies and Dependencies</Typography>
                 <Divider></Divider>
 
                 <Typography variant={"body1"}>HyperSynesthesia application and plugin use: </Typography>
@@ -37,6 +37,12 @@ export default function LegalPage() {
                     <li><Typography variant={"body1"}><Link href={"https://reactjs.org/"}
                                                             target={"_blank"}>React</Link> as the frontend
                         framework</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://reactrouter.com/en/main"}
+                                                            target={"_blank"}>React Router</Link> as the client side
+                        router</Typography></li>
+                    <li><Typography variant={"body1"}><Link href={"https://github.com/aautio/react-modal-image"}
+                                                            target={"_blank"}>React Modal Image</Link> for image display</Typography>
+                    </li>
                     <li><Typography variant={"body1"}><Link href={"https://mui.com/"} target={"_blank"}>Material
                         UI</Link> as the UI library</Typography></li>
                     <li><Typography variant={"body1"}><Link href={"https://tanstack.com/query/latest"}
