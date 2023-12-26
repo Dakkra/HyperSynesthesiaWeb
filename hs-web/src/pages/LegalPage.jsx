@@ -18,17 +18,10 @@ export default function LegalPage() {
                     <li><Typography variant={"body1"}><Link href={"https://adoptium.net/"}
                                                             target={"_blank"}>Java</Link> as the runtime
                         environment</Typography></li>
-                    <li><Typography variant={"body1"}><Link href={"https://openjfx.io/"}
-                                                            target={"_blank"}>JavaFX</Link> for
-                        UI and rendering</Typography></li>
                     <li><Typography variant={"body1"}><Link href={"https://github.com/kokorin/Jaffree"}
                                                             target={"_blank"}>Jaffree</Link> (<Link
                         href={"https://ffmpeg.org/"} target={"_blank"}>FFMPEG</Link> wrapper for Java) for decoding and
                         encoding media</Typography></li>
-                    <li><Typography variant={"body1"}><Link href={"https://avereon.com/product/xenon"}
-                                                            target={"_blank"}>Xenon</Link> as the
-                        application
-                        framework</Typography></li>
                 </ul>
 
                 <Divider></Divider>

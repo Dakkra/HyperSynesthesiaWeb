@@ -23,25 +23,15 @@ export default function HomePage() {
                         Generate frame data from audio input
                     </li>
                     <li>
-                        Analyze frame data to generate FFT, oscilloscope, and other audio visualization data
+                        Analyze frame data to generate loudness, FFT, oscilloscope, and other audio visualization data
                     </li>
                     <li>
-                        Render using <Link href={"https://openjfx.io/"}
-                                           target={"_blank"}>JavaFX</Link> (chosen
-                        for web views to allow CSS styling of
-                        components)
+                        Render using Java Swing
                     </li>
                     <li>
                         Encode video using FFMPEG again
                     </li>
                 </ul>
-                <Typography variant="body1">
-                    With these goals in mind, the project is using <Link
-                    href={"https://avereon.com/product/xenon"} target={"_blank"}>Xenon</Link> as an
-                    application framework to enable
-                    quality of life features such as auto-updates, threading, UI workflows, and more.
-                    <br/>
-                </Typography>
             </Card>
             <Card>
                 If you wish to join or watch the progress on this project feel free to:
