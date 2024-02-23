@@ -21,8 +21,8 @@ export default function PageFooter(props) {
                         <Link href={"https://github.com/Dakkra/HyperSynesthesia/blob/main/LICENSE"}
                               target={"_blank"}>HyperSynesthesia is under the GPL v3 License</Link>
                         <br/>
-                        Copyright © Christopher Soderquist (<Link href={"https://dakkra.com"}
-                                                                  target={"_blank"}>Dakkra</Link>)
+                        Copyright © Eurydice Soderquist (<Link href={"https://dakkra.com"}
+                                                               target={"_blank"}>Dakkra</Link>)
                     </Typography>
                     <br/>
                     <Button aria-label={"toggle theme button"}
