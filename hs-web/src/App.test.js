@@ -18,6 +18,6 @@ test("Theme toggle button changes content", () => {
 
 test("Includes copyright", () => {
     render(<BrowserRouter><App/></BrowserRouter>);
-    const copyright = screen.getByText(/Copyright © Christopher Soderquist/i);
+    const copyright = screen.getByText(/Copyright © Eurydice Soderquist/i);
     expect(copyright).toBeInTheDocument();
 });
